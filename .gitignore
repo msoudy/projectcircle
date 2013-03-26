@@ -6,3 +6,7 @@
 *.pyc
 
 *.pyc
+
+projectcircle/circleight/.DS_Store
+
+projectcircle/circleight/templates/.DS_Store
