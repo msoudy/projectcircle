@@ -1,7 +1,6 @@
 from django.conf.urls.defaults import patterns, include, url
 from django.conf import settings
-
-from django.views.generic.simple import direct_to_template
+from django.views.generic import TemplateView
 
 import os
 APP_PATH = os.path.abspath(os.path.dirname(__file__))
@@ -19,6 +18,11 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
 )
+
+
+    #urlpatterns = patterns('',
+    #                  (r'^about/', TemplateView.as_view(template_name="index.html")),
+#                  )
 
 
 urlpatterns += patterns('',
