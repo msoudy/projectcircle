@@ -18,8 +18,6 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
 )
-
-
     #urlpatterns = patterns('',
     #                  (r'^about/', TemplateView.as_view(template_name="index.html")),
 #                  )
