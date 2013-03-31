@@ -3,15 +3,122 @@
 
 <head>
     <title>Circleight</title>
+    <link href="{% url "circleight.views.index" %}css/reset.css" rel="stylesheet" type="text/css"/>
     <link href="{% url "circleight.views.index" %}css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="{% url "circleight.views.index" %}css/skeleton.css" rel="stylesheet" type="text/css"/>
+    <link href="{% url "circleight.views.index" %}css/layout.css" rel="stylesheet" type="text/css"/>
 	<script src="{% url "circleight.views.index" %}js/jquery.js" type="text/javascript"></script>
+	<script src="{% url "circleight.views.index" %}js/script.js" type="text/javascript"></script>
 </head>
 
 <body>
 
-<h1>Circleight</h1>
+<div id="logo">
+	<img src="/static/images/C8.png" height="60" width="60">
+</div>
 
-<p>Hello :)</p>
+
+<div id="circlemates">
+	<div id="circlemates_title">
+		Circlemates
+	</div>
+	<div class="container" id="circlemates_content">
+		<div class="two columns" classid="mate1" class="mate">
+			<div class="two content">
+				<img src="/static/images/jack.png" height="60" width="60"/>
+			</div>
+			<div class="name">Jack</div>
+		</div>
+		<div class="two columns" id="mate2" class="mate">
+			<div class="two content">
+				<img src="/static/images/roxanne.png" height="60" width="60"/>
+			</div>
+			<div class="name">Roxanne</div>
+		</div>
+		<div class="two columns" id="mate3" class="mate">
+			<div class="two content">
+				<img src="/static/images/donna.png" height="60" width="60"/>
+			</div>
+			<div class="name">Donna</div>
+		</div>
+		<div class="two columns" id="mate4" class="mate">
+			<div class="two content">
+				<img src="/static/images/mark.png" height="60" width="60"/>
+			</div>
+			<div class="name">Mark</div>
+		</div>
+		<div class="two columns" id="mate5" class="mate">
+			<div class="two content">
+				<img src="/static/images/empty.png" height="60" width="60"/>	
+			</div>	
+		</div>
+		<div class="two columns" id="mate6" class="mate">
+			<div class="two content">
+				<img src="/static/images/empty.png" height="60" width="60"/>	
+			</div>	
+		</div>
+		<div class="two columns" id="mate7" class="mate">
+			<div class="two content">
+				<img src="/static/images/empty.png" height="60" width="60"/>	
+			</div>
+		</div>
+		<div class="two columns" id="mate8" class="mate">
+			<div class="two content">
+				<img src="/static/images/empty.png" height="60" width="60"/>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="interests">
+	<div id="interests_title">
+		Interests
+	</div>
+	<div class="container" id="interests_content">
+		<div class="two columns" class="interest">
+			<img src="/static/images/football.png" height="60" width="60"/>
+			<div class="name">Football <p>Qatar</p></div>
+		</div>
+		<div class="two columns" class="interest">
+			<img src="/static/images/matches.png" height="60" width="60"/>
+			<div class="name">Matches</div>
+		</div>
+		<div class="two columns" class="interest">
+			<img src="/static/images/doha.png" height="60" width="60"/>
+			<div class="name">Doha</div>
+		</div>
+		<div class="two columns" class="interest">
+			<img src="/static/images/empty.png" height="60" width="60"/>
+		</div>
+		<div class="two columns" class="interest">
+			<img src="/static/images/empty.png" height="60" width="60"/>
+		</div>
+		<div class="two columns" class="interest">
+			<img src="/static/images/empty.png" height="60" width="60"/>
+		</div>
+		<div class="two columns" class="interest">
+			<img src="/static/images/empty.png" height="60" width="60"/>
+		</div>
+		<div class="two columns" class="interest">
+			<img src="/static/images/empty.png" height="60" width="60"/>
+		</div>
+	</div>
+</div>
+
+<div id="events">
+	<div id="events_title">
+		Events
+	</div>
+</div>
+
+<div id="timeline">
+	<div id="timeline_title">
+		<img src="/static/images/profile.png" height="60" width="60"/>
+		<img src="/static/images/messages.png" height="60" width="60"/>
+		<img src="/static/images/edit.png" height="60" width="60"/>
+		Timeline
+	</div>
+</div>
 
 </body>
 </html>

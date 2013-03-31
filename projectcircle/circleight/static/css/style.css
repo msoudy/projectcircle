@@ -3,13 +3,73 @@
 html { overflow: -moz-scrollbars-vertical; }
 
 body {
-	margin: 20px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	padding: 0;
-	background: #FFFFFF;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	background: #EFF4F8;
+	font-family: Gill Sans, sans-serif;
+	font-size: 30px;
 	color: #3C3D3F;
     text-align: center;
+}
+
+#logo{
+	text-align: left;
+	padding: 0;
+}
+
+.name{
+	font-size: 15px;
+	display: block;
+}
+
+
+#circlemates_content, #interests_content{
+	width: 600px;
+	margin: auto;
+}
+
+#circlemates, #interests, #events {
+	background-color: #FDFDFD;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 10px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	left: -100px;
+	top: -10px;
+	border-style:solid;
+	border-width:1px;
+	border-color: #E6E6E6;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+#circlemates {
+	text-align: center;
+}
+
+#interests {
+	text-align: center;
+	clear: both;
+}
+
+#events {
+	clear: both;
+}
+
+#timeline {
+	position: fixed;
+	width: 20%;
+	top: 0px;
+	right : 30px;
+	float: right;
+	background-color: #FDFDFD;
+	border-style:solid;
+	border-width:1px;
+	border-color: #E6E6E6;
+	height: 100%;
 }
 
 
