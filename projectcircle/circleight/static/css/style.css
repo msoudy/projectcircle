@@ -22,11 +22,43 @@ body {
 	display: block;
 }
 
+.interest{
+	white-space: normal;
 
-#circlemates_content, #interests_content{
-	width: 600px;
-	margin: auto;
+
+}
+
+
+#interests_content{
 	overflow-x: scroll;
+	overflow-y: hidden !important;
+	padding-bottom: 10px;
+}
+
+table {
+	 table-layout: fixed;
+}
+
+td {
+	font-size: 15px;
+	padding-left: 15px;
+	width: 60px;
+}
+
+#interests_title {
+	padding-bottom: 10px;
+}
+
+.mate {
+	display: inline-block;
+
+}
+
+
+#timeline_content {
+	margin-top: -30px;
+	overflow-y: scroll;
+	height: 100%;
 }
 
 #circlemates, #interests, #events {
@@ -51,10 +83,6 @@ body {
 	text-align: center;
 }
 
-#interests {
-	text-align: center;
-	clear: both;
-}
 
 #events {
 	clear: both;
@@ -71,11 +99,11 @@ body {
 	border-width:1px;
 	border-color: #E6E6E6;
 	height: 100%;
-	overflow-y: scroll;
 }
 
 #timeline_title {
-	position: fixed;
+	position: relative;
+	width: 100%;
 }
 
 .timeline_event {
