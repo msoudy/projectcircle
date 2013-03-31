@@ -4,8 +4,9 @@ from django.db import models
 class User(models.Model):
 	firstname = models.CharField(max_length=30) # first name
 	lastname = models.CharField(max_length=30) # last name
-	username = models.CharField(max_length=30) # unique
-	email = models.EmailField() # unique
+	username = models.CharField(max_length=30, unique = True) # unique
+	email = models.EmailField(unique = True) # unique
+    profileimage = models.ImageField(upload_to='circleight/profilePicutres') # the image itself
 	posts = models.CommaSeparatedIntegerField(max_length=1000) # The list of posts published by the user (by postid)
 
 	def __unicode__(self):
@@ -32,7 +33,6 @@ class ImagePost(models.Model):
     user = models.ForeignKey(User) # owner of the post
     image = models.ImageField(upload_to='circleight/images') # the image itself
     mimeType = models.CharField(max_length=20)
-    caption = models.CharField(max_length=200) # image caption
     text = models.TextField() # text attached to the post (description?)
     subject = models.TextField() # the subject of the post
     pub_date = models.DateTimeField('date published') # publication date of the post
