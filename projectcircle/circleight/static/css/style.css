@@ -26,6 +26,7 @@ body {
 #circlemates_content, #interests_content{
 	width: 600px;
 	margin: auto;
+	overflow-x: scroll;
 }
 
 #circlemates, #interests, #events {
@@ -70,6 +71,27 @@ body {
 	border-width:1px;
 	border-color: #E6E6E6;
 	height: 100%;
+	overflow-y: scroll;
+}
+
+#timeline_title {
+	position: fixed;
+}
+
+.timeline_event {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+hr {
+	margin: 0px;
+	border:0px;
+	height: 1px;
+	background: #E6E6E6;
 }
 
 
